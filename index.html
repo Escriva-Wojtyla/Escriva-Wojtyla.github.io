@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Josemaria Escriva Wandera · Telecommunication Engineering</title>
+<meta name="description" content="Telecommunication and Information Engineering student at DeKUT. Fibre, wireless links and embedded measurement systems.">
+<style>
+  :root{
+    --bg:#f6f3ec; --ink:#16181d; --muted:#5d6370; --line:#ddd8cb;
+    --card:#fffdf8; --accent:#0b6e5a; --accent-ink:#ffffff;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#101214; --ink:#ecebe6; --muted:#9aa0aa; --line:#272b31;
+           --card:#171a1d; --accent:#3fc7a4; --accent-ink:#06231b; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:17px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  a{color:inherit}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:15px;color:var(--muted)}
+  nav a{text-decoration:none;margin-left:20px}
+  nav a:hover{color:var(--ink)}
+  h1,h2,h3{font-family:ui-serif,Georgia,"Times New Roman",serif;line-height:1.15;margin:0}
+
+  /* 1. Hero */
+  .hero{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:center;padding:48px 0 56px}
+  .photo{width:200px;height:200px;border-radius:50%;background:var(--line);overflow:hidden;border:3px solid var(--card);box-shadow:0 0 0 1px var(--line)}
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+  .hero h1{font-size:clamp(34px,6vw,52px);letter-spacing:-.02em}
+  .headline{font-size:clamp(19px,3vw,23px);margin:14px 0 8px;font-family:ui-serif,Georgia,serif}
+  .ask{color:var(--muted);margin:0 0 24px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:16px;border:1.5px solid var(--ink)}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+  .btn:hover{transform:translateY(-1px)}
+
+  /* 2. Proof */
+  .proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0;
+         font-family:ui-serif,Georgia,serif;font-size:clamp(19px,3vw,24px);line-height:1.4}
+  .proof b{color:var(--accent)}
+
+  section{padding:64px 0 0}
+  h2{font-size:30px;margin-bottom:24px}
+  .label{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+
+  /* 3. Projects */
+  .project{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;margin-bottom:20px}
+  .project h3{font-size:23px;margin-bottom:6px}
+  .status{display:inline-block;font-size:12.5px;padding:2px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin-bottom:16px}
+  .project dl{margin:0;display:grid;grid-template-columns:110px 1fr;gap:10px 18px}
+  .project dt{color:var(--muted);font-size:14px;padding-top:2px}
+  .project dd{margin:0}
+  .tags{display:flex;gap:8px;flex-wrap:wrap}
+  .tags span{font-size:13.5px;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 9px}
+  .project a.link{color:var(--accent);font-weight:600}
+
+  /* About */
+  .about{display:grid;gap:26px}
+  .about p{margin:0}
+  .timeline{list-style:none;margin:0;padding:0}
+  .timeline li{padding:10px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:130px 1fr;gap:16px}
+  .timeline li:last-child{border-bottom:1px solid var(--line)}
+  .timeline .when{color:var(--muted);font-size:15px}
+
+  /* Contact */
+  .contact a{font-size:20px;font-family:ui-serif,Georgia,serif}
+  .contact p{margin:6px 0}
+  footer{padding:64px 0 40px;color:var(--muted);font-size:14px}
+
+  @media(max-width:640px){
+    .hero{grid-template-columns:1fr;gap:24px;padding-top:24px}
+    .photo{width:140px;height:140px}
+    .project dl,.timeline li{grid-template-columns:1fr;gap:2px}
+    .project dt{margin-top:8px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <span>JEW</span>
+    <div><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  </nav>
+
+  <!-- 1. HERO -->
+  <header class="hero">
+    <div class="photo"><img src="photo.jpg" alt="Portrait of Josemaria Escriva Wandera"></div>
+    <div>
+      <h1>Josemaria Escriva Wandera</h1>
+      <p class="headline">Telecom engineering student who has worked on real fibre and wireless networks, and now builds precision measurement hardware.</p>
+      <!-- EDIT THIS: say exactly what you want (internship, junior role, a mentor). -->
+      <p class="ask">Graduating May 2027. Looking for a junior network, RF or embedded engineering role, or an internship before then.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:jescriva00@gmail.com">Email me</a>
+        <a class="btn" href="https://github.com/Escriva-Wojtyla" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. PROOF -->
+  <div class="proof">
+    I spent three months on the field team of a rural ISP serving <b>400+ users</b>, splicing and testing fibre, configuring MikroTik and Ubiquiti gear, and running link-budget checks.
+  </div>
+
+  <!-- 3. PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <h3>Fizeau displacement interferometer</h3>
+      <span class="status">Final year project · in progress · report due Dec 2026</span>
+      <dl>
+        <dt>Problem</dt>
+        <dd>Measuring very small displacements needs an optical setup read out by electronics that are precise and low-noise, and that can also drive the moving element.</dd>
+        <dt>What I built</dt>
+        <dd>An STM32 interface that samples four photodetector channels, streams them to a computer over USB, and drives a piezo amplifier from a DAC. I am also designing the amplifier and low-pass filter stage between the optical pickup unit's photodetector and the ADC. Firmware is in progress and the hardware is still being bench tested.</dd>
+        <dt>Stack</dt>
+        <dd class="tags"><span>STM32F103</span><span>C++ / PlatformIO</span><span>KiCad</span><span>LTspice</span><span>TL074 / TL071</span><span>USB serial</span></dd>
+        <dt>Code</dt>
+        <dd><a class="link" href="https://github.com/Escriva-Wojtyla" target="_blank" rel="noopener">GitHub profile →</a> <!-- Replace with the direct repo link once the interferometer repo is public. --></dd>
+      </dl>
+    </article>
+
+    <article class="project">
+      <h3>Smart home system and IoT prototypes</h3>
+      <span class="status">University internal attachment · 2024</span>
+      <dl>
+        <dt>Problem</dt>
+        <dd>Home appliances and devices that you can only control by hand. <!-- EDIT: say what yours actually controlled or sensed. --></dd>
+        <dt>What I built</dt>
+        <dd>A working smart home demonstration and several IoT prototypes, built during a hands-on training attachment in motor control, microcontrollers and PCB design.</dd>
+        <dt>Stack</dt>
+        <dd class="tags"><span>Microcontrollers</span><span>PCB design</span><span>LTspice</span><span>MATLAB</span><!-- EDIT: add the actual board, sensors and protocol you used. --></dd>
+        <dt>Code</dt>
+        <dd><a class="link" href="https://github.com/Escriva-Wojtyla" target="_blank" rel="noopener">GitHub profile →</a> <!-- EDIT: link the repo, or delete this project if there is no code or photo to show. --></dd>
+      </dl>
+    </article>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About</h2>
+
+    <div>
+      <p class="label">Where I am</p>
+      <p>Fifth-year Telecommunication and Information Engineering student at Dedan Kimathi University of Technology in Nyeri, Kenya, graduating May 2027. CCNA certified.</p>
+    </div>
+
+    <div>
+      <p class="label">What I am learning</p>
+      <p>Analog front-end design for precision measurement, getting accurate readings out of the STM32's ADCs, and writing firmware in a clean, testable way. I am also learning to use git properly and to publish my work.</p>
+    </div>
+
+    <div>
+      <p class="label">What I did before</p>
+      <ul class="timeline">
+        <li><span class="when">Feb – Apr 2026</span><span><b>Namelok Wireless</b>, industrial attachee. Fibre splicing and OTDR testing, MikroTik and Ubiquiti configuration, field surveys and link budgets, customer-premises installs.</span></li>
+        <li><span class="when">Feb – Apr 2025</span><span><b>Jowalen Energy Solutions</b>, attachee. Safety inspections, electrical drawings and wiring diagrams in CAD, fault-finding support.</span></li>
+        <li><span class="when">Jan – Mar 2024</span><span><b>DeKUT internal attachment.</b> Motor control, microcontrollers, PCB design, and the smart home build above.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p><a href="mailto:jescriva00@gmail.com">jescriva00@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/josemaria-escriva-wandera-4b0176283/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </section>
+
+  <footer>© 2026 Josemaria Escriva Wandera · Nyeri, Kenya</footer>
+</div>
+</body>
+</html>
